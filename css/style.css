@@ -19,9 +19,17 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
+p {
+	font-size: 1.7em
+}
+
 .bg-container {
 	background: url('../assets/bg-m.jpg') center 25%;
 	height: 100vh;
+}
+
+.landing {
+	position: relative;
 }
 
 .header {
@@ -42,6 +50,26 @@ body {
 	color: #fff;
 	font-family: 'ffad_matroregular';
 	font-size: 2.2em;
+}
+
+.navigation {
+	font-family: 'ffad_matroregular';
+	text-transform: uppercase;
+}
+
+.menu {
+	position: relative;
+}
+
+.navigation a {
+	color: #fff;
+	display: block;
+	text-decoration: none;
+}
+
+.about {
+	background-color: #fff;
+	opacity: .9;
 }
 
 @media (min-width: 600px) {
@@ -73,6 +101,44 @@ body {
 	.desc {
 		font-size: 3.5em;
 	}
+
+	.navigation {
+		right: 42px;
+		position: absolute;
+		top: 320px;
+	}
+
+	.navigation li {
+		line-height: 60px;
+	}
+
+	.item-about {
+		font-size: 5.5em;
+	}
+
+	.item-description {
+		font-size: 3.7em;
+	}
+
+	.item-video {
+		font-size: 5em;
+	}
+
+	.item-events {
+		font-size: 3.7em;
+	}
+
+	.item-pictures {
+		font-size: 4.2em;
+	}
+
+	.about {
+		display: none;
+	}
+
+	.about:target {
+		display: block;
+	}
 }
 
 @media (min-width: 1200px) {
@@ -90,10 +156,9 @@ body {
 		margin: 0 0;
 	}
 
-	.desc {
-		font-size: 4.2em;
+	.navigation {
+		right: 0;
 	}
-
 }
 
 @media (min-width: 1800px) {
