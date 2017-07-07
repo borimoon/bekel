@@ -1,0 +1,101 @@
+@font-face {
+	font-family: 'ffad_matroregular';
+	src: url('font/ffad_matro-webfont.eot');
+	src: url('font/ffad_matro-webfont.eot?#iefix') format('embedded-opentype'),
+		url('font/ffad_matro-webfont.woff2') format('woff2'),
+		url('font/ffad_matro-webfont.woff') format('woff'),
+		url('font/ffad_matro-webfont.ttf') format('truetype'),
+		url('font/ffad_matro-webfont.svg#ffad_matroregular') format('svg');
+		font-weight: normal;
+		font-style: normal;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: #F11FB8;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.bg-container {
+	background: url('../assets/bg-m.jpg') center 25%;
+	height: 100vh;
+}
+
+.header {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+
+.logo {
+	height: 92px;
+	margin-top: 15px;
+	margin-left: 15px;
+	width: 234px;
+}
+
+.desc {
+	color: #fff;
+	font-family: 'ffad_matroregular';
+	font-size: 2.2em;
+}
+
+@media (min-width: 600px) {
+
+}
+
+@media (min-width: 900px) {
+	.bg-container {
+		background: url('../assets/bg.png') center 25%;
+	}
+
+	.header {
+		-webkit-align-items: center;
+		align-items: center;
+		-webkit-flex-direction: row;
+		flex-direction: row;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		margin: 0 42px;
+	}
+
+	.logo {
+		height: 181px;
+		margin-top: 55px;
+		margin-left: 0;
+		width: 464px;
+	}
+
+	.desc {
+		font-size: 3.5em;
+	}
+}
+
+@media (min-width: 1200px) {
+	.landing,
+	.about,
+	.description,
+	.video,
+	.events,
+	.pictures {
+		margin: 0 auto;
+		width: 940px;
+	}
+
+	.header {
+		margin: 0 0;
+	}
+
+	.desc {
+		font-size: 4.2em;
+	}
+
+}
+
+@media (min-width: 1800px) {
+
+}
