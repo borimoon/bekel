@@ -24,11 +24,12 @@ p {
 }
 
 .bg-container {
-	background: url('../assets/bg-m.jpg') center 25%;
+	background: url('../assets/bg-m.jpg') no-repeat center 25%;
 	height: 100vh;
 }
 
-.landing {
+.landing,
+.content {
 	position: relative;
 }
 
@@ -67,7 +68,7 @@ p {
 	text-decoration: none;
 }
 
-.about {
+.section {
 	background-color: #fff;
 	opacity: .9;
 }
@@ -78,7 +79,7 @@ p {
 
 @media (min-width: 900px) {
 	.bg-container {
-		background: url('../assets/bg.png') center 25%;
+		background: url('../assets/bg.png') no-repeat center 25%;
 	}
 
 	.header {
@@ -132,29 +133,47 @@ p {
 		font-size: 4.2em;
 	}
 
+	.section {
+		height: 100%;
+		left: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 999;
+	}
+
 	.about {
 		display: none;
-		position: fixed;
-	z-index: 999;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	top: 0;
-	left: 0;
+	}
+
+	.close {
+		display: block;
+		height: 65px;
+		width: 65px;
+		z-index: 9999;
 	}
 
 	.about:target {
 		display: block;
 	}
+
+	.close-about:target {
+		display: none;
+	}
+
+	.about p {
+		background-color: red;
+		height: 55%;
+		left: 42px;
+		position: absolute;
+		top: 280px;
+		width: 65%;
+	}
 }
 
 @media (min-width: 1200px) {
 	.landing,
-	.about,
-	.description,
-	.video,
-	.events,
-	.pictures {
+	.content {
 		margin: 0 auto;
 		width: 940px;
 	}
@@ -165,6 +184,11 @@ p {
 
 	.navigation {
 		right: 0;
+	}
+
+	.about p {
+		left: 12%;
+		width: 56%;
 	}
 }
 
