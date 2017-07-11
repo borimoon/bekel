@@ -15,7 +15,7 @@ html {
 }
 
 body {
-	background-color: #F11FB8;
+	background-color: #f11fb8;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -121,28 +121,129 @@ p {
 		line-height: 60px;
 	}
 
+	.navigation li::before,
+	.navigation li::after {
+		background: url('');
+		content: ' ';
+		display: none;
+		height: 30px;
+		width: 30px;
+	}
+
+	.navigation li::before {
+		background: url('../assets/left.svg') no-repeat;
+	}
+
+	.navigation li::after {
+		background: url('../assets/right.svg') no-repeat;
+	}
+
 	.menu {
 		z-index: 9999;
 	}
 
+	.item-about::before {
+		left: -30px;
+		position: absolute;
+		top: 20px;
+	}
+
 	.item-about {
 		font-size: 5.5em;
+		position: relative;
+		transform: rotate(-5deg);
+	}
+
+	.item-about::after {
+		right: 10px;
+		position: absolute;
+		top: 20px;
+	}
+
+	.item-description::before {
+		left: 12px;
+		position: absolute;
+		top: 20px;
 	}
 
 	.item-description {
 		font-size: 3.7em;
+		position: relative;
+		text-align: center;
+	}
+
+	.item-description::after {
+		right: 15px;
+		position: absolute;
+		top: 20px;
+	}
+
+	.item-video::before {
+		left: 7px;
+		position: absolute;
+		top: 20px;
 	}
 
 	.item-video {
 		font-size: 5em;
+		text-align: center;
+		transform: rotate(5deg);
+	}
+
+	.item-video::after {
+		right: 0;
+		position: absolute;
+		top: 20px;
+	}
+
+	.item-events::before {
+		left: -33px;
+		position: absolute;
+		top: 20px;
 	}
 
 	.item-events {
 		font-size: 3.7em;
+		position: relative;
+		text-align: center;
+	}
+
+	.item-events::after {
+		right: -35px;
+		position: absolute;
+		top: 20px;
+	}
+
+	.item-pictures::before {
+		left: 10px;
+		position: absolute;
+		top: 20px;
 	}
 
 	.item-pictures {
 		font-size: 4.2em;
+		position: relative;
+		text-align: center;
+		transform: rotate(-8deg);
+	}
+
+	.item-pictures::after {
+		right: 5px;
+		position: absolute;
+		top: 20px;
+	}
+
+	.item-about:hover::before,
+	.item-about:hover::after,
+	.item-description:hover::before,
+	.item-description:hover::after,
+	.item-video:hover::before,
+	.item-video:hover::after,
+	.item-events:hover::before,
+	.item-events:hover::after,
+	.item-pictures:hover::before,
+	.item-pictures:hover::after {
+		display: block;
 	}
 
 	.section {
@@ -205,10 +306,9 @@ p {
 		right: 0;
 	}
 
-	/*.container {
-		left: 12%;
-		width: 56%;
-	}*/
+	.close {
+		right: 330px;
+	}
 }
 
 @media (min-width: 1800px) {
