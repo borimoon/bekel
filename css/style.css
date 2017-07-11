@@ -70,7 +70,15 @@ p {
 
 .section {
 	background-color: #fff;
-	opacity: .9;
+}
+
+.close {
+	display: none;
+}
+
+.imagefilm {
+	height: 100%;
+	width: 100%;
 }
 
 @media (min-width: 600px) {
@@ -113,6 +121,10 @@ p {
 		line-height: 60px;
 	}
 
+	.menu {
+		z-index: 9999;
+	}
+
 	.item-about {
 		font-size: 5.5em;
 	}
@@ -134,40 +146,47 @@ p {
 	}
 
 	.section {
-		height: 100%;
-		left: 0;
+		height: 55%;
+		left: 42px;
 		position: fixed;
-		top: 0;
-		width: 100%;
+		overflow: scroll;
+		top: 280px;
+		width: 65%;
 		z-index: 999;
 	}
 
-	.about {
+	.about,
+	.description,
+	.video,
+	.events,
+	.pictures {
 		display: none;
 	}
 
 	.close {
 		display: block;
 		height: 65px;
+		position: fixed;
+		right: 200px;
+		top: 250px;
 		width: 65px;
 		z-index: 9999;
 	}
 
-	.about:target {
+	.about:target,
+	.description:target,
+	.video:target,
+	.events:target,
+	.pictures:target {
 		display: block;
 	}
 
-	.close-about:target {
+	.close:target {
 		display: none;
 	}
 
 	.about p {
-		background-color: red;
-		height: 55%;
-		left: 42px;
-		position: absolute;
-		top: 280px;
-		width: 65%;
+		margin: 20px;
 	}
 }
 
@@ -186,10 +205,10 @@ p {
 		right: 0;
 	}
 
-	.about p {
+	/*.container {
 		left: 12%;
 		width: 56%;
-	}
+	}*/
 }
 
 @media (min-width: 1800px) {
