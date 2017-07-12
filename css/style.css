@@ -15,7 +15,6 @@ html {
 }
 
 body {
-	background-color: #f11fb8;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -24,13 +23,21 @@ p {
 }
 
 .bg-container {
-	background: url('../assets/bg-m.jpg') no-repeat center 25%;
+	background: #f11fb8 url('../assets/bg-m.png') no-repeat center 25%;
 	height: 100vh;
 }
 
 .landing,
 .content {
 	position: relative;
+}
+
+.about,
+.description,
+.video,
+.events,
+.pictures {
+	margin: 0 15px;
 }
 
 .header {
@@ -42,8 +49,8 @@ p {
 
 .logo {
 	height: 92px;
-	margin-top: 15px;
-	margin-left: 15px;
+	margin-left: 20px;
+	margin-top: 20px;
 	width: 234px;
 }
 
@@ -51,21 +58,80 @@ p {
 	color: #fff;
 	font-family: 'ffad_matroregular';
 	font-size: 2.2em;
+	margin-top: 17px;
+	text-align: center;
 }
 
 .navigation {
 	font-family: 'ffad_matroregular';
+	position: relative;
 	text-transform: uppercase;
 }
 
+.toggle span::after {
+	background-color: grey;
+	content: ' ';
+	display: block;
+	height: 42px;
+	position: fixed;
+	right: 20px;
+	top: 20px;
+	width: 42px;
+	z-index: 99999;
+}
+
 .menu {
-	position: relative;
+	background-color: #f11fb8;
+	display: none;
+	height: 100vh;
+	opacity: .9;
+	padding-top: 80px;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	z-index: 9999;
+}
+
+.navigation li {
+	line-height: 1.35;
 }
 
 .navigation a {
 	color: #fff;
 	display: block;
 	text-decoration: none;
+}
+
+.item-about {
+	font-size: 5.5em;
+	position: relative;
+	text-align: center;
+	transform: rotate(-5deg);
+}
+
+.item-description {
+	font-size: 3.7em;
+	position: relative;
+	text-align: center;
+}
+
+.item-video {
+	font-size: 5em;
+	text-align: center;
+	transform: rotate(5deg);
+}
+
+.item-events {
+	font-size: 3.7em;
+	position: relative;
+	text-align: center;
+}
+
+.item-pictures {
+	font-size: 4.2em;
+	position: relative;
+	text-align: center;
+	transform: rotate(-8deg);
 }
 
 .section {
@@ -79,6 +145,33 @@ p {
 .imagefilm {
 	height: 100%;
 	width: 100%;
+}
+
+@media (max-width: 599px) and (orientation:landscape) {
+
+	.menu {
+		padding-top: 72px;
+	}
+
+	.item-about {
+		font-size: 4.2em;
+	}
+
+	.item-description {
+		font-size: 2.5em;
+	}
+
+	.item-video {
+		font-size: 3.3em;
+	}
+
+	.item-events {
+		font-size: 2.5em;
+	}
+
+	.item-pictures {
+		font-size: 3.7em;
+	}
 }
 
 @media (min-width: 600px) {
@@ -100,6 +193,15 @@ p {
 		margin: 0 42px;
 	}
 
+	.about,
+	.description,
+	.video,
+	.events,
+	.pictures {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
 	.logo {
 		height: 181px;
 		margin-top: 55px;
@@ -109,12 +211,29 @@ p {
 
 	.desc {
 		font-size: 3.5em;
+		margin-top: 0;
+		text-align: left;
 	}
 
 	.navigation {
 		right: 42px;
 		position: absolute;
 		top: 320px;
+	}
+
+	.toggle {
+		display: none;
+	}
+
+	.menu {
+		background-color: transparent;
+		display: block !important;
+		height: auto;
+		opacity: 1;
+		padding-top: 0;
+		position: relative;
+		top: auto;
+		width: auto;
 	}
 
 	.navigation li {
@@ -138,10 +257,6 @@ p {
 		background: url('../assets/right.svg') no-repeat;
 	}
 
-	.menu {
-		z-index: 9999;
-	}
-
 	.item-about::before {
 		left: -30px;
 		position: absolute;
@@ -149,9 +264,7 @@ p {
 	}
 
 	.item-about {
-		font-size: 5.5em;
-		position: relative;
-		transform: rotate(-5deg);
+		text-align: left;
 	}
 
 	.item-about::after {
@@ -166,12 +279,6 @@ p {
 		top: 20px;
 	}
 
-	.item-description {
-		font-size: 3.7em;
-		position: relative;
-		text-align: center;
-	}
-
 	.item-description::after {
 		right: 15px;
 		position: absolute;
@@ -182,12 +289,6 @@ p {
 		left: 7px;
 		position: absolute;
 		top: 20px;
-	}
-
-	.item-video {
-		font-size: 5em;
-		text-align: center;
-		transform: rotate(5deg);
 	}
 
 	.item-video::after {
@@ -202,12 +303,6 @@ p {
 		top: 20px;
 	}
 
-	.item-events {
-		font-size: 3.7em;
-		position: relative;
-		text-align: center;
-	}
-
 	.item-events::after {
 		right: -35px;
 		position: absolute;
@@ -218,13 +313,6 @@ p {
 		left: 10px;
 		position: absolute;
 		top: 20px;
-	}
-
-	.item-pictures {
-		font-size: 4.2em;
-		position: relative;
-		text-align: center;
-		transform: rotate(-8deg);
 	}
 
 	.item-pictures::after {
@@ -268,8 +356,8 @@ p {
 		display: block;
 		height: 65px;
 		position: fixed;
-		right: 200px;
-		top: 250px;
+		right: 95px;
+		top: 242px;
 		width: 65px;
 		z-index: 9999;
 	}
@@ -307,7 +395,7 @@ p {
 	}
 
 	.close {
-		right: 330px;
+		right: 215px;
 	}
 }
 
