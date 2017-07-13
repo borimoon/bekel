@@ -19,12 +19,15 @@ body {
 }
 
 p {
-	font-size: 1.7em
+	font-size: 1.7em;
+	line-height: 1.3;
 }
 
 .bg-container {
 	background: #f11fb8 url('../assets/bg-m.png') no-repeat center 25%;
 	height: 100vh;
+	margin-bottom: 25px;
+	position: relative;
 }
 
 .landing,
@@ -136,6 +139,19 @@ p {
 
 .section {
 	background-color: #fff;
+	margin-bottom: 25px;
+}
+
+.unicorn {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+}
+
+.cat {
+	bottom: 0;
+	right: 0;
+	position: absolute;
 }
 
 .close {
@@ -181,6 +197,11 @@ p {
 @media (min-width: 900px) {
 	.bg-container {
 		background: url('../assets/bg.png') no-repeat center 25%;
+		margin-bottom: 0;
+	}
+
+	.cat {
+		right: 35%;
 	}
 
 	.header {
@@ -191,6 +212,17 @@ p {
 		-webkit-justify-content: space-between;
 		justify-content: space-between;
 		margin: 0 42px;
+	}
+
+	.section {
+		height: 55%;
+		left: 42px;
+		margin-bottom: 0;
+		overflow: scroll;
+		position: fixed;
+		top: 280px;
+		width: 65%;
+		z-index: 999;
 	}
 
 	.about,
@@ -334,16 +366,6 @@ p {
 		display: block;
 	}
 
-	.section {
-		height: 55%;
-		left: 42px;
-		position: fixed;
-		overflow: scroll;
-		top: 280px;
-		width: 65%;
-		z-index: 999;
-	}
-
 	.about,
 	.description,
 	.video,
@@ -359,7 +381,7 @@ p {
 		right: 95px;
 		top: 242px;
 		width: 65px;
-		z-index: 9999;
+		z-index: 999999;
 	}
 
 	.about:target,
@@ -380,6 +402,11 @@ p {
 }
 
 @media (min-width: 1200px) {
+
+	.unicorn {
+		left: 10%;
+	}
+
 	.landing,
 	.content {
 		margin: 0 auto;
