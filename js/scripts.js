@@ -25,7 +25,7 @@ $(document).ready(function(){
 
 // stop youtube video
 $(function(){
-	$('.close').click(function(){
+	$('.stop').click(function(){
 		$('iframe').attr('src', $('iframe').attr('src'));
 	});
 });
