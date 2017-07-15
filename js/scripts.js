@@ -16,6 +16,13 @@ $(function() {
 	});
 });
 
+// menu open
+$(document).ready(function(){
+	$('#toggle').click(function(){
+		$(this).toggleClass('menuopen');
+	});
+});
+
 // stop youtube video
 $(function(){
 	$('.close').click(function(){
