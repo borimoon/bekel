@@ -280,7 +280,7 @@ p {
 
 @media (min-width: 900px) {
 	.bg-container {
-		background: url('../assets/bg.png') no-repeat center 25%;
+		background: #f17 url('../assets/bg.png') no-repeat center 25%;
 		margin-bottom: 0;
 	}
 
