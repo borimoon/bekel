@@ -21,7 +21,12 @@ $(document).ready(function(){
 	$('#toggle').click(function(){
 		$(this).toggleClass('menuopen');
 	});
+
+	$('#menu').click(function(){
+		$('#toggle').removeClass('menuopen');
+	});
 });
+
 
 // stop youtube video
 $(function(){
