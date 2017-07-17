@@ -281,6 +281,11 @@ p {
 }
 
 @media (min-width: 900px) {
+
+	body {
+		overflow-y: hidden;
+	}
+
 	.bg-container {
 		background: #f17 url('../assets/bg.png') no-repeat center 25%;
 		margin-bottom: 0;
