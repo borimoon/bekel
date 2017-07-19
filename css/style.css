@@ -85,7 +85,8 @@ a {
 .description,
 .video,
 .events,
-.pictures {
+.pictures,
+.events-content {
 	margin: 0 15px;
 }
 
@@ -323,11 +324,28 @@ a.menuopen {
 
 .head {
 	color: #f17;
+	margin-bottom: 35px;
 	text-align: center;
 }
 
 .head span {
 	color: #517;
+}
+
+.subhead {
+	margin-bottom: 22px;
+}
+
+.subhead3 {
+	margin-bottom: 12px;
+}
+
+.subhead4 {
+	margin-bottom: 7px;
+}
+
+.text {
+	margin-bottom: 17px;
 }
 
 @media (max-width: 599px) and (orientation:landscape) {
