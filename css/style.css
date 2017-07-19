@@ -172,7 +172,7 @@ em {
 	display: none;
 	height: 100vh;
 	opacity: .9;
-	padding-top: 80px;
+	padding-top: 20px;
 	position: fixed;
 	top: 0;
 	width: 100vw;
@@ -190,7 +190,7 @@ em {
 }
 
 .item-about {
-	font-size: 5.5em;
+	font-size: 4.2em;
 	position: relative;
 	text-align: center;
 	-webkit-transform: rotate(-5deg);
@@ -201,13 +201,13 @@ em {
 }
 
 .item-description {
-	font-size: 3.7em;
+	font-size: 2.5em;
 	position: relative;
 	text-align: center;
 }
 
 .item-video {
-	font-size: 5em;
+	font-size: 3.3em;
 	text-align: center;
 	-webkit-transform: rotate(5deg);
 	-moz-transform: rotate(5deg);
@@ -217,13 +217,13 @@ em {
 }
 
 .item-events {
-	font-size: 3.7em;
+	font-size: 2.5em;
 	position: relative;
 	text-align: center;
 }
 
 .item-pictures {
-	font-size: 4.2em;
+	font-size: 3.7em;
 	position: relative;
 	text-align: center;
 	-webkit-transform: rotate(-8deg);
@@ -231,6 +231,11 @@ em {
 	-ms-transform: rotate(-8deg);
 	-o-transform: rotate(-8deg);
 	transform: rotate(-8deg);
+}
+
+.social-fb {
+	margin-left: 50%;
+	margin-top: 20px;
 }
 
 .facebook {
@@ -245,7 +250,7 @@ em {
 
 .section {
 	background-color: #fff;
-	margin-bottom: 25px;
+	margin-bottom: 37px;
 }
 
 .close {
@@ -339,33 +344,6 @@ em {
 	margin-bottom: 17px;
 }
 
-@media (max-width: 599px) and (orientation:landscape) {
-
-	.menu {
-		padding-top: 72px;
-	}
-
-	.item-about {
-		font-size: 4.2em;
-	}
-
-	.item-description {
-		font-size: 2.5em;
-	}
-
-	.item-video {
-		font-size: 3.3em;
-	}
-
-	.item-events {
-		font-size: 2.5em;
-	}
-
-	.item-pictures {
-		font-size: 3.7em;
-	}
-}
-
 @media (min-width: 600px) {
 	.bg-container {
 		background: #f17 url('../assets/bg-m2.png') no-repeat center 25%;
@@ -424,6 +402,26 @@ em {
 		margin: 0 42px;
 	}
 
+	.item-about {
+		font-size: 5.5em;
+	}
+
+	.item-description {
+		font-size: 3.7em;
+	}
+
+	.item-video {
+		font-size: 5em;
+	}
+
+	.item-events {
+		font-size: 3.7em;
+	}
+
+	.item-pictures {
+		font-size: 4.2em;
+	}
+
 	.about,
 	.description,
 	.video,
@@ -455,7 +453,7 @@ em {
 	.social {
 		right: 42px;
 		position: absolute;
-		bottom: 0;
+		bottom: -100px;
 	}
 
 	.toggle {
@@ -569,6 +567,11 @@ em {
 	.item-pictures:hover::before,
 	.item-pictures:hover::after {
 		display: block;
+	}
+
+	.social-fb {
+		margin-left: 0;
+		margin-top: 0;
 	}
 
 	.section {
