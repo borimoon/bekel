@@ -118,8 +118,8 @@ a {
 	text-transform: uppercase;
 }
 
-.toggle {
-	background-color: #20ed28;
+.toggle,
+.menuopen {
 	height: 42px;
 	position: fixed;
 	right: 20px;
@@ -128,66 +128,31 @@ a {
 	z-index: 99999;
 }
 
-.toggle span {
-	background-color: #fff;
-	display: block;
-	height: 4px;
-	left: 50%;
-	margin-left: -15px;
-	margin-top: -2px;
-	position: relative;
-	top: 50%;
-	width: 30px;
-}
-
-.toggle span::before,
-.toggle span::after {
-	background-color: #fff;
-	content: ' ';
-	display: block;
-	height: 4px;
-	position: absolute;
-	width: 100%;
-}
-
-.toggle span::before {
-	top: -12px;
-}
-
-.toggle span::after {
-	bottom: -12px;
-}
-
-.menuopen,
-.menuopen span {
-	background: none;
-}
-
-a.menuopen {
+.toggle {
 	background-color: #20ed28;
+	border-radius: 2px;
 }
 
-.menuopen span::before {
-	top: 0;
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	transform: rotate(45deg);
+.menuopen {
+	background-color: transparent;
 }
 
-.menuopen span::after {
-	bottom: 0;
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	transform: rotate(-45deg);
+.toggle span,
+.menuopen span {
+	display: block;
+	height: 36px;
+	left: 3px;
+	position: absolute;
+	top: 3px;
+	width: 36px;
 }
 
-.menuopen span::before,
-.menuopen span::after {
-	transition-delay: 0s, 0.2s;
+.toggle span {
+	background: url('../assets/menuopen.svg') no-repeat;
+}
+
+.menuopen span {
+	background: url('../assets/menuclose.svg') no-repeat;
 }
 
 .menu {
