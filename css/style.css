@@ -61,6 +61,14 @@ em {
 	font-size: 70%;
 }
 
+.lighter {
+	font-weight: 300;
+}
+
+.block {
+	display: block;
+}
+
 .bg-container {
 	background: #f17 url('../assets/bg-m.png') no-repeat center 25%;
 	height: 100vh;
@@ -91,7 +99,7 @@ em {
 .events,
 .pictures,
 .events-content {
-	margin: 0 15px;
+	margin: 0 15px 20px;
 }
 
 .header {
@@ -223,6 +231,16 @@ em {
 	-ms-transform: rotate(-8deg);
 	-o-transform: rotate(-8deg);
 	transform: rotate(-8deg);
+}
+
+.facebook {
+	background: url('../assets/fb.svg') no-repeat;
+	display: block;
+	height: 42px;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	width: 42px;
 }
 
 .section {
@@ -432,6 +450,12 @@ em {
 		right: 42px;
 		position: absolute;
 		top: 320px;
+	}
+
+	.social {
+		right: 42px;
+		position: absolute;
+		bottom: 0;
 	}
 
 	.toggle {
@@ -655,6 +679,10 @@ em {
 
 	.event-img {
 		margin-top: 42px;
+	}
+
+	.events-content {
+		margin-bottom: 42px;
 	}
 }
 
