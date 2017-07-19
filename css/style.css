@@ -388,10 +388,6 @@ em {
 		overflow-y: hidden;
 	}
 
-	.cat {
-		right: 35%;
-	}
-
 	.header {
 		-webkit-align-items: center;
 		align-items: center;
@@ -451,9 +447,9 @@ em {
 	}
 
 	.social {
-		right: 42px;
+		right: 70px;
 		position: absolute;
-		bottom: -100px;
+		bottom: -97px;
 	}
 
 	.toggle {
@@ -654,10 +650,6 @@ em {
 
 @media (min-width: 1200px) {
 
-	.unicorn {
-		left: 10%;
-	}
-
 	.landing,
 	.content,
 	.events-header,
@@ -686,27 +678,5 @@ em {
 
 	.events-content {
 		margin-bottom: 42px;
-	}
-}
-
-@media (min-width: 1400px) {
-
-	.unicorn {
-		left: 15%;
-	}
-
-	.cat {
-		right: 40%;
-	}
-}
-
-@media (min-width: 1800px) {
-
-	.unicorn {
-		left: 22%;
-	}
-
-	.cat {
-		right: 42%;
 	}
 }
