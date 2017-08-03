@@ -329,19 +329,40 @@ em {
 }
 
 .subhead {
-	margin-bottom: 22px;
-}
-
-.subhead3 {
+	line-height: 1.2;
 	margin-bottom: 12px;
 }
 
+.subhead3 {
+	line-height: 1.2;
+	margin-bottom: 22px;
+}
+
 .subhead4 {
+	line-height: 1.2;
 	margin-bottom: 7px;
 }
 
 .text {
 	margin-bottom: 17px;
+}
+
+p.nomargin {
+	margin-bottom: 0;
+}
+
+li.margin {
+	margin-bottom: 7px;
+}
+
+.list {
+	font-size: 1.7em;
+	line-height: 1.5;
+	margin-bottom: 17px;
+}
+
+.strong {
+	font-weight: 600;
 }
 
 @media (min-width: 600px) {
@@ -367,12 +388,12 @@ em {
 
 	.subhead {
 		font-size: 4.2em;
-		margin-bottom: 42px;
+		margin-bottom: 17px;
 	}
 
 	.subhead3 {
 		font-size: 2.7em;
-		margin-bottom: 17px;
+		margin-bottom: 42px;
 	}
 
 	.imagefilm {
