@@ -356,9 +356,12 @@ li.margin {
 }
 
 .list {
+	margin-bottom: 17px;
+}
+
+.list li {
 	font-size: 1.7em;
 	line-height: 1.5;
-	margin-bottom: 17px;
 }
 
 .strong {
